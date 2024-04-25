@@ -1,0 +1,264 @@
+/* Add your custom CSS styles here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 0%;
+}
+
+.slides {
+  display: flex;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 700px;
+}
+
+.slides img {
+  object-fit: cover;
+  background-position: center;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth slide transition with custom cubic-bezier timing function */
+}
+
+#prev-btn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: 0px 10px;
+}
+
+#next-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: 0px 10px;
+}
+
+button {
+  background-image: linear-gradient(
+    to right,
+    #8c6c4a,
+    #7ac5cf
+  ); /* Gradient background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-image 0.3s ease;
+}
+
+button:hover {
+  background-image: linear-gradient(
+    to right,
+    #8c6c4a,
+    #599597
+  ); /* Darker gradient on hover */
+}
+
+#h-3 h1 {
+  color: rgb(72, 66, 23);
+  position: absolute;
+  width: 650px;
+  z-index: 1;
+  margin: 250px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 50px;
+  letter-spacing: 4px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.row {
+  display: flex;
+}
+
+.light-theme {
+  --text-white: #fff;
+  --text-black: #000;
+}
+
+.dark-theme {
+  --text-white: #000;
+  --text-black: #fff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 30px;
+}
+
+.nav-links li {
+  margin: 0px 12px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-black);
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #8c6c4a;
+  border-bottom: 1px solid;
+}
+
+.nav-links a:active {
+  color: #ff7945;
+  border-bottom: 1px solid;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.themeMode {
+  font-size: 18px;
+  color: var(--text-black);
+}
+
+.logo {
+  color: rgb(139, 108, 74);
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr; /* Specify different widths for each column */
+  gap: 10px; /* Add some gap between grid items */
+  margin-bottom: 50px;
+}
+
+.item {
+  padding: 10px;
+  text-align: center;
+}
+
+.item img {
+  border-radius: 10%;
+  width: 100%; /* Make the image fill the container width */
+  height: auto; /* Auto adjust height to maintain aspect ratio */
+}
+
+.hero-section {
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  padding: 50% 0%;
+}
+
+#s-1 {
+  height: 150px;
+  width: 100%;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#s-1 h2 {
+  color: rgb(139, 108, 74);
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+#s-1 p {
+  color: #000;
+  letter-spacing: 4px;
+  padding: 0px 5px;
+}
+
+/* Custom styles for testimonials */
+.Testimonial {
+  margin: 50px;
+  height: 500px;
+  padding: 0px 70px;
+  display: flex;
+}
+
+.carousel-item-active {
+  width: 40%;
+  height: 40%;
+  padding-bottom: 50px;
+  float: left;
+}
+
+.content {
+
+  width: 40%;
+  line-height: 3rem;
+  padding-left: 70px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+position: absolute;
+right: 0;
+font-family: Georgia, "Times New Roman", Times, serif;
+
+}
+
+.content h3 {
+  margin: 50px;
+  color: rgb(139, 108, 74);
+}
+.content p{
+
+  padding-top: 100px;
+  color: #453626;
+}
+
+.clientimages {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+  margin: 0px 60px 60px 0px;
+}
+
+
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .row {
+    display: block;
+  }
+}
+
+@media (max-width: 560px) {
+}
+
+@media (max-width: 428px) {
+}
+
+@media (max-width: 375px) {
+}
